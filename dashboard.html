@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | Temple AR</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="dashboard">
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="dashboard-box">
+      <h3>Project</h3>
+      <p>AR-Based Cultural Heritage Preservation Platform</p>
+    </div>
+
+    <div class="dashboard-box">
+      <h3>Admin Actions</h3>
+      <button class="action-btn" onclick="goTo('manage-temples.html')">
+        Manage Temples
+      </button>
+      <button class="action-btn" onclick="goTo('manage-monuments.html')">
+        Manage Monuments
+      </button>
+    </div>
+
+    <button id="logoutBtn">Logout</button>
+
+  </div>
+</div>
+
+<script>
+  function goTo(page) {
+    window.location.href = page;
+  }
+</script>
+
+<script type="module" src="auth_check.js"></script>
+<script type="module" src="dashboard.js"></script>
+<script type="module" src="logout.js"></script>
+
+</body>
+</html>

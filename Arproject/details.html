@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temple Details</title>
+  <link rel="stylesheet" href="details.css">
+  <script type="module" src="details.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1 id="name">Temple Name</h1>
+    <span id="state">State</span>
+
+    <!-- ✅ Language Selector -->
+    <select id="languageSelect" class="lang-select">
+      <option value="en">English</option>
+      <option value="te">తెలుగు</option>
+      <option value="hi">हिंदी</option>
+      <option value="ta">தமிழ்</option>
+      <option value="gu">ગુજરાતી</option>
+    </select>
+  </div>
+
+  <!-- ✅ FULL WIDTH 3D MODEL -->
+  <video id="templeVideo" class="model-video reveal r1" controls>
+    <source id="videoSource" type="video/mp4">
+  </video>
+
+
+  <!-- CONTENT GRID -->
+  <div class="content">
+
+    <!-- LEFT SIDE -->
+    <div>
+
+      <!-- IMAGE SLIDER -->
+      <div class="slider reveal r2">
+        <button id="prev">❮</button>
+        <img id="sliderImage" alt="Temple Image">
+        <button id="next">❯</button>
+      </div>
+
+      <!-- DESCRIPTION -->
+      <div class="description reveal r3">
+        <p id="desc"></p>
+      </div>
+
+      <!-- REAL VIDEO -->
+      <div class="video-section reveal r4">
+        <h3>Temple Video</h3>
+        <div class="video-box">
+          <video id="realVideo" controls>
+            <source id="realVideoSource" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="map-box reveal r5">
+      <h3>Visitor Information</h3>
+
+      <h4>Location</h4>
+      <iframe id="mapFrame" loading="lazy"></iframe>
+
+      <button id="navigateBtn" class="navigate-btn">
+        📍 Open in Google Maps
+      </button>
+
+      <ul>
+        <li>Airport: <span id="airport"></span></li>
+        <li>Railway: <span id="railway"></span></li>
+        <li>Bus: <span id="bus"></span></li>
+      </ul>
+
+      <div id="highlights-box">
+        <h4>🏛 Key Highlights</h4>
+        <ul id="highlightsList"></ul>
+      </div>
+
+      <div class="info-section">
+        <h3>📍 Travel Details</h3>
+        <p><strong>Distance:</strong> <span id="cityDistance"></span></p>
+        <p><strong>Travel Time:</strong> <span id="travelTime"></span></p>
+        <p><strong>Local Transport:</strong> <span id="localTransport"></span></p>
+      </div>
+
+      <hr>
+
+      <div class="info-section">
+        <h3>🗓 Visitor Information</h3>
+        <p><strong>Best Time:</strong> <span id="bestTime"></span></p>
+        <p><strong>Visiting Hours:</strong> <span id="visitingHours"></span></p>
+        <p><strong>Entry Fee:</strong> <span id="entryFee"></span></p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

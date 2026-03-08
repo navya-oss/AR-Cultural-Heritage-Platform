@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AR Cultural Heritage</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="index.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ================= HERO / SEARCH ================= -->
+  <section class="search-section">
+
+    <!-- TOP RIGHT -->
+    <div class="top-controls animate-ltr" style="animation-delay: 0.1s;">
+
+      <div class="filters">
+        <select id="filterType">
+          <option value="all">All Heritage</option>
+          <option value="Temple">Temples</option>
+          <option value="monuments">Monuments</option>
+        </select>
+      </div>
+
+      <div class="help-dropdown">
+        <button class="help-btn">Help ▾</button>
+
+        <div class="help-menu">
+
+          <div class="help-item">
+            <div class="help-question">How to Search</div>
+            <div class="help-answer">
+              Type a temple or monument name in the search bar and press Search.
+            </div>
+          </div>
+
+          <div class="help-item">
+            <div class="help-question">How to Use Filters</div>
+            <div class="help-answer">
+              Use the filter dropdown to view only temples or monuments.
+            </div>
+          </div>
+
+          <div class="help-item">
+            <div class="help-question">About AR View</div>
+            <div class="help-answer">
+              AR View lets you explore heritage sites in interactive 3D.
+            </div>
+          </div>
+
+          <div class="help-item">
+            <div class="help-question">Contact Support</div>
+            <div class="help-answer">
+              For support, contact the administrator.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ⭐ CENTER CONTENT -->
+    <div class="hero-center">
+
+      <h1 class="animate-ltr" style="animation-delay: 0.2s;">
+        AR Cultural Heritage
+      </h1>
+
+      <p class="subtitle animate-ltr" style="animation-delay: 0.3s;">
+        Explore temples & monuments of India through immersive technology
+      </p>
+
+      <div class="search-bar animate-ltr" style="animation-delay: 0.4s;">
+        <span class="search-icon">🔍</span>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Type temple or monument name..."
+        />
+
+        <button class="mic-btn">🎙️</button>
+        <button class="search-btn">Search</button>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- ================= CONTENT ================= -->
+  <main>
+    <div class="section-title">Featured Heritage Sites</div>
+    <div id="list"></div>
+  </main>
+
+</body>
+</html>

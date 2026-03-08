@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Monuments</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <h2>Manage Monuments</h2>
+    <div id="monumentList"></div>
+    <br>
+    <button onclick="goBack()">Back to Dashboard</button>
+  </div>
+</div>
+
+<script>
+  function goBack() {
+    window.location.href = "dashboard.html";
+  }
+</script>
+
+<script type="module" src="auth_check.js"></script>
+<script type="module" src="manage-monuments.js"></script>
+
+</body>
+</html>

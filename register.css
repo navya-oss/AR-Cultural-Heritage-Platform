@@ -1,0 +1,181 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
+}
+
+/* =============================
+   GLOBAL BACKGROUND (MATCH REGISTER PAGE)
+============================= */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #f1f5f9;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(40, 90, 100, 0.6),
+      rgba(8, 20, 30, 0.95)
+    ),
+    linear-gradient(
+      135deg,
+      #0b1f2a,
+      #123845,
+      #0b1f2a
+    );
+}
+
+/* =========================
+   COMMON CONTAINER
+========================= */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   CARD (Register / Login)
+========================= */
+.card {
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+.card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* =========================
+   INPUT FIELDS
+========================= */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #bdbdbd;
+}
+
+input:focus {
+  outline: none;
+  border-color: #d4af37;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #d4af37;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #b8962e;
+}
+
+/* =========================
+   REGISTER / LOGIN LINK COLOR FIX
+========================= */
+.card p a {
+  color: #d4af37;          /* Same as button */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card p a:hover {
+  text-decoration: underline;
+  color: #b8962e;          /* Button hover color */
+}
+
+
+/* =========================
+   DASHBOARD STYLES
+========================= */
+.dashboard {
+  width: 100%;
+  max-width: 900px;
+  padding: 30px;
+}
+
+.dashboard h1 {
+  margin-bottom: 20px;
+}
+
+.dashboard-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border-left: 5px solid #d4af37;
+}
+
+/* =========================
+   LOGOUT BUTTON
+========================= */
+.logout-btn {
+  background: #b00020;
+  color: #fff;
+}
+
+.logout-btn:hover {
+  background: #d0002f;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+  .card {
+    margin: 20px;
+  }
+}
+
+.action-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #c89b3c;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background: #d8ad45;
+}
